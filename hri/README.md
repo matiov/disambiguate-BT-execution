@@ -38,5 +38,3 @@ To enable it, run `ros2 run disambiguate_ros disambiguate_service --ros-args -p 
 * Navigate to the `disambiguate` folder.
 * Run `python3 test/test_disambiguate.py`.
 
-(**TODO**: make a better README.md with tutorials and explaination and link to paeprs).  
-(**TODO**: handle differently the paths in the modules so that they depend from the disambiguation service).
