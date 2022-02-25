@@ -1,0 +1,5 @@
+# This service allows to update the detected objects at runtime.
+DetectedObject object
+---
+bool success
+string message

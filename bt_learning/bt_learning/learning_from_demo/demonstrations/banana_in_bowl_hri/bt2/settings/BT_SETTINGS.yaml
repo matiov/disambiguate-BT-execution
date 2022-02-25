@@ -1,0 +1,23 @@
+action_nodes:
+- open_gripper
+- close_gripper
+- approach banana
+- approach 0.023 0.003 0.056 bowl
+- pick0 banana
+- place0 banana 0.023 0.003 0.056 0.071 bowl
+- disambiguate
+condition_nodes:
+- gripper_state open
+- gripper_state closed
+- in_gripper none
+- reachable banana
+- reachable 0.023 0.003 0.056 bowl
+- in_gripper banana
+- object_roughly_at banana 0.023 0.003 0.056 0.071 bowl
+- clear
+fallback_nodes:
+- f(
+sequence_nodes:
+- s(
+up_node:
+- )

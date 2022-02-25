@@ -1,0 +1,22 @@
+action_nodes:
+- open_gripper
+- close_gripper
+- approach banana
+- approach 0.4867987555780804 -0.04118596980839412 0.2130237354226273 abb_yumi_base_link
+- pick0 banana
+- place0 banana 0.4867987555780804 -0.04118596980839412 0.2130237354226273 0.0 abb_yumi_base_link
+condition_nodes:
+- gripper_state open
+- gripper_state closed
+- in_gripper none
+- reachable banana
+- reachable 0.4867987555780804 -0.04118596980839412 0.2130237354226273 abb_yumi_base_link
+- in_gripper banana
+- object_roughly_at banana 0.4867987555780804 -0.04118596980839412 0.2130237354226273
+  0.0 abb_yumi_base_link
+fallback_nodes:
+- f(
+sequence_nodes:
+- s(
+up_node:
+- )

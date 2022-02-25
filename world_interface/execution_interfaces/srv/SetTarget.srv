@@ -1,0 +1,5 @@
+# This service allows to set a target so that it is exposed at runtime.
+ActionTarget action
+---
+bool success
+string message

@@ -1,0 +1,6 @@
+# This service allows to get the detected objects at runtime.
+
+---
+bool success
+string message
+DetectedObject[] objects

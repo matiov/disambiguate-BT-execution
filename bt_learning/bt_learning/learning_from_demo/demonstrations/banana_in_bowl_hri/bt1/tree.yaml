@@ -1,0 +1,28 @@
+- s(
+- f(
+- clear
+- disambiguate
+- )
+- s(
+- f(
+- object_roughly_at banana 0.023000000000000003 0.0030000000000000005 0.056 0.07083784299369934
+  bowl
+- s(
+- f(
+- in_gripper banana
+- s(
+- f(
+- gripper_state open
+- open_gripper
+- )
+- pick4 banana
+- )
+- )
+- place4 banana 0.023000000000000003 0.0030000000000000005 0.056 0.07083784299369934
+  bowl
+- )
+- )
+- in_gripper none
+- gripper_state open
+- )
+- )

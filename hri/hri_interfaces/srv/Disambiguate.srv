@@ -1,0 +1,7 @@
+# Service for triggering the HRI module to disambiguate the scene.
+# TODO: add the image path to the service request.
+
+string category_str
+---
+bool result
+int16[] bounding_box

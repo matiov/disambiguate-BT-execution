@@ -1,0 +1,23 @@
+{TEMPLATE_NAMESPACE}:
+    sensors:
+        camera:
+            object_publisher:
+                ros__parameters:
+                    base_frame: '{TEMPLATE_PREFIX}yumi_base_link'
+                    camera_frame: '{TEMPLATE_PREFIX}depth_camera_link'
+                    objects: ['banana', 'fork', 'knife', 'bowl', 'scissors', 'apple', 'cup', 'bottle']
+                    detection_freq: 1.0
+                    only_detect: False
+                    simple_rotation: False
+
+    robot:
+        tool_broadcaster_node:
+            ros__parameters:
+                from_frame: '{TEMPLATE_PREFIX}yumi_robr_tool0'
+                to_frame: '{TEMPLATE_PREFIX}yumi_task_tool'
+                base_frame: '{TEMPLATE_PREFIX}yumi_base_link'
+                rws_tool: True
+                rob_task: 'ROB_R'
+                oX: 0.0
+                oY: 0.0
+                oZ: -0.01
