@@ -38,14 +38,6 @@ Please see the documentation in every module for more detailed information.
 * Information on the usage of the LfD GUI is found [here](./world_interface/abb_robot/robot_interface/doc)
 * Instructions for robot visualization and spawning are in the [robot_bringup](./world_interface/abb_robot/robot_bringup/README.md) package
 
-# Acknowledgements
-
-We would like to thank:
-* __Oscar Gustavsson__ for collaborating on the first, marker-based, version of the Learning from Demonstration framework, that resulted in the paper [Combining Context Awareness and Planning to Learn Behavior Trees from Demonstration](https://arxiv.org/abs/2109.07133).
-* __Fethiye Irmak Dogan__ for the Human-Robot Interaction module backbone.
-* __Zhanpeng Xie__ for the work on improving the Genetic Programming modules.
-
-
 ---
 
 ### Note on test routines for Copyright
