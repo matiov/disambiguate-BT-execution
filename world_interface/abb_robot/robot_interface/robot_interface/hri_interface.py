@@ -146,6 +146,7 @@ class HRITask(wi.Task, Thread):
             print(f'Intersecting BB {bounding_box} with BB {list(obj.bounding_box)}')
             area, _ = boundingbox_intersection(bounding_box, list(obj.bounding_box))
             if area > 0:
+                print('Found BB to update!')
                 obj.disambiguated = True
             else:
                 continue
@@ -153,8 +154,11 @@ class HRITask(wi.Task, Thread):
         request = UpdateObject.Request()
         if updated_obj is not None:
             request.object = updated_obj
-        response = self.update_objects_client.call(request)
-        return response.success
+            response = self.update_objects_client.call(request)
+            return response.success
+        else:
+            print('The disambiguation framework detected the wrong object.')
+            return False
 
 
 class DisambiguateTask(HRITask):

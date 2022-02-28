@@ -35,6 +35,7 @@ import sys
 from typing import List
 
 from hri_interfaces.srv import Disambiguate
+from object_recognition_interfaces.msg import DetectedObject
 from object_recognition_interfaces.srv import GetObjects, UpdateObject
 from perception_utils.process_detection import boundingbox_intersection
 import rclpy
@@ -77,7 +78,7 @@ class DetectionHRIClient(Node):
         object_class: str,
         bounding_box: List[int]
     ):
-        updated_obj = None
+        updated_obj = DetectedObject()
         for obj in detected_objects:
             if obj.category_str != object_class:
                 continue
