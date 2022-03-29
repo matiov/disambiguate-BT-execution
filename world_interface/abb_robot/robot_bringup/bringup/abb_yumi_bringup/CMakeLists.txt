@@ -38,7 +38,6 @@ include(GNUInstallDirs)
 install(
   DIRECTORY
     "config"
-    "launch"
   DESTINATION "${CMAKE_INSTALL_DATADIR}/${PROJECT_NAME}"
 )
 
